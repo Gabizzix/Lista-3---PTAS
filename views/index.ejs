@@ -1,174 +1,54 @@
 <!DOCTYPE html>
+<html lang="pt-br"> 
+
 <head>
-  <title>PROJETO-PICOLO-PTAS1</title>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJETO-PICOLO-PTAS1</title> 
+
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
-<br>
 
-  <h1>𝑬𝑺𝑴𝑨𝑳𝑻𝑬𝑹𝑰𝑨 𝑮&𝑴</h1>
+<body style="background-color: #b8b3b3;"> 
 
-<br><br>
+  <center>
+    <h1>𝑬𝑺𝑴𝑨𝑳𝑻𝑬𝑹𝑰𝑨 𝑮&𝑴</h1> 
+  </center>
 
-    <ul>
+  <br><br>
+
+  <ul>
+    <% for (let produto of produtos) { %>
     <li>
-
-    <a href="produto">
-    <h2>CAFÉ BISTRO</h2>
-    <img src="esmalte1.png">
-    <p><i>Esmalte com acabamento variado.</i></p>
-    <div>
-      <a class="botaoCard" href="produto">ver produto</a> 
-    </div>
-
-    </a>
-    </li>
-    
-    <li>
-    <a href="produto">
-    <h2>PURO CACAU</h2>
-    <img src="esmalte2.png">
-    <p><i>Possui a cor perfeita para você que ama a cor nude!</i></p>
-    <div>
-      <a class="botaoCard" href="produto">ver produto</a> 
+      <h2>ESMALTES</h2> 
+      <img src="<%= produto.imagem %>"> 
+      <h2><%= produto.nome %></h2> 
+      <p><%= produto.descricao %></p> 
+      <p>R$:<%= produto.preco %> </p> 
+      <div>
+        <a class="botaoCard" href="/produto/<%= produto.id %>">ver produto</a> 
       </div>
-
-    </a>
     </li>
+    <% } %> 
+  </ul>
 
-    <li>
-    <a href="produto">
-    <h2>CAFÉ</h2>
-    <img src="esmalte3.png">
-    <p><i>Esmalte com acabamento variado.</i></p>
-    <div>
-      <a class="botaoCard" href="produto">ver produto</a> 
+  <h1 class="ff">Conheça nossos produtos desenvolvidos após anos de pesquisa!!! </h1> 
+
+  <p>𝑬𝑺𝑴𝑨𝑳𝑻𝑬𝑹𝑰𝑨 𝑮&𝑴</p> 
+
+  <div class="ggg">   
+    <nav class="ggg navbar navbar-expand-lg ">
+      <div class="col">      
+        <div class="text-center">
+            <left class="ss">
+        
+            <strong>Copyright 2023</strong> Criador: Gabriela Mattos
+          </left>
+        </div>
       </div>
-
-    </a>
-    </li>
-
-    <li>
-    <a href="produto">
-    <h2>SEMENTE DE ROMÃ</h2>
-    <img src="esmalte4.png">
-    <p><i>A combinação de cores vai deixar você ainda mais poderosa!</i></p>
-    <div>
-      <a class="botaoCard" href="produto">ver produto</a> 
-      </div>
-
-    </a>
-    </li>
-
-    <li>
-    <a href="produto">
-    <h2>TAÇA DE CRISTAL</h2>
-    <img src="esmalte5.png">
-    <p><i>Use-o para criar francesinhas delicadas.</i></p>
-    <div>
-      <a class="botaoCard" href="produto">ver produto</a> 
-      </div>
-
-    </a>
-    </li>
-
-    <li>
-    <a href="produto">
-    <h2>TÔ DE HOME</h2>
-    <img src="esmalte6.png">
-    <p><i>Essa cor simboliza o conforto dos looks para ficar em casa.</i></p>
-    <div>
-      <a class="botaoCard" href="produto">ver produto</a> 
-      </div>
-
-    </a>
-    </li>
-
-    <li>
-    <a href="produto">
-    <h2> A MÃE TÁ ON</h2>
-    <img src="esmalte7.png">
-    <p><i>Você pode construir o brilho, com uma ou várias camadas </i></p>
-    <div>
-      <a class="botaoCard" href="produto">ver produto</a> 
-      </div>
-    </a>
-    </li>
-
-    <li>
-    <a href="produto">
-    <h2>BLACK TIE</h2>
-    <img src="esmalte8.png">
-    <p><i>Perfeito para executar detalhes preciosos!</i></p>
-    <div>
-      <a class="botaoCard" href="produto">ver produto</a> 
-      </div>
-
-    </a>
-    </li>
-
-    <li>
-    <a href="produto">
-    <h2>BASEADA EM FATOS REAIS</h2>
-    <img src="esmalte9.png">
-    <p><i>Nosso esmalte Nude é um clássico!Um bege super elegante.</i></p>
-    <div>
-      <a class="botaoCard" href="produto">ver produto</a> 
-      </div>
-
-    </a>
-    </li>
-
-    <li>
-    <a href="produto">
-    <h2>HAJA PACIÊNCIA</h2>
-    <img src="esmalte10.png">
-    <p><i>Essa é a escolha perfeita para as temporadas mais frias do ano!</i></p>
-    <div>
-      <a class="botaoCard" href="produto">ver produto</a> 
-      </div>
-
-    </a>
-    </li>
-
-    <li>
-    <a href="produto">
-    <h2>SENTIMENTAL SOU DESSAS</h2>
-    <img src="esmalte11.png">
-    <p><i>Este rosa-queimado é inspirado nas sentimentais do rolê!</i></p>
-    <div>
-    <a class="botaoCard" href="produto">ver produto</a> 
-    </div>
-    </a>
-    </li>
-
-    <li>
-    <a href="produto">
-    <h2>SÓ VIM PELA COMIDA</h2>
-    <img src="esmalte12.png">
-    <p><i>Um verde escuro que marca presença! </i></p>
-    <div>
-      <a class backgroun = "botaoCard" href="produto">ver produto</a> 
-      </div>
-    </a>
-    </li>
-
-</li>
-</ul>
-
-<h1 class="ff">Conheça nossos produtos desenvolvidos após anos de pesquisa!!! </h1>
-  
-<p>𝑬𝑺𝑴𝑨𝑳𝑻𝑬𝑹𝑰𝑨 𝑮&𝑴</p>
-
-<div class="ggg">
-<nav class="ggg navbar navbar-expand-lg ">
-<div class="col">
-<div class="text-center">
-
-   <left class="ss">
-   <strong>Copyright 2023</strong> Criadores: Gabriela Mattos</p>
-</div>
-</div>
-</div>
+    </nav>
+  </div>
 
 </body>
+
 </html>

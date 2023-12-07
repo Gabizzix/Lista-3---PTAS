@@ -1,53 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br"> 
+
 <head>
-    <title>PROJETO-PICOLO-PTAS1</title>
-    <link rel="stylesheet" type="text/css" href="/styles.css">
-    </head>
-    <body style="background-color: #b8b3b3;">
-    <center><h4><a class="nav-link" aria-current="page" href="/">Principal</a></h4></center>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>PROJETO-PICOLO-PTAS1</title> 
 
-    <br></br>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
 
-    <div class="box">
-        
-        <center><img src="/esmalte1.png" class="img"></img></center>
-        <div class="frase">
-        <center><h2 class="titulo">CAFÉ BISTRO</h2></center>
-        <div>
-        <center><h2>DAILUS</h2></center>
-        <br></br>
-        <center><h3 style>Ele proporciona secagem rápida (efeito drying ultrasseco), alta cobertura, brilho intenso (efeito high shine) e duradouro.</h3></center>
-        <center><h3 style>As cores variam entre coberturas cremosas e peroladas. O esmalte conta com pincel Big Brush, que possui 900 fios e cerdas arredondadas.</h3></center>
-        
-        <center><div class="d-grid gap-2 col-6 mx-auto"></center>
-        <center><button class="btn btn-primary" type="button">Comprar por R$: 7,99</button></center>
-    </div>
-    </div>
-    </div>
+<body style="background-color: #b8b3b3;"> 
 
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-  
-<center><p>𝑬𝑺𝑴𝑨𝑳𝑻𝑬𝑹𝑰𝑨 𝑮&𝑴</p></center>
+  <center>
+    <h1>𝑬𝑺𝑴𝑨𝑳𝑻𝑬𝑹𝑰𝑨 𝑮&𝑴</h1> 
+  </center>
 
-<div class="ggg">
-<nav class="ggg navbar navbar-expand-lg ">
-<div class="col">
-<div class="text-center">
+  <br><br>
 
-   <left class="ss">
-   <center><strong>Copyright 2023</strong> Criadores: Gabriela Mattos</p></center>
-</div>
-</div>
-</div>
+  <ul>
+    <% for (let produto of produtos) { %>
+    <li>
+      <h2>ESMALTES</h2> 
+      <img src="<%= produto.imagem %>"> 
+      <h2><%= produto.nome %></h2> 
+      <p><%= produto.descricao %></p>
+      <p>R$:<%= produto.preco %> </p>
+      <div>
+        <a class="botaoCard" href="/produto/<%= produto.id %>">ver produto</a>
+      </div>
+    </li>
+    <% } %> 
+  </ul>
 
-</body>
-</html>
+  <h1 class="ff">Conheça nossos produtos desenvolvidos após anos de pesquisa!!! </h1> 
+
+  <p>𝑬𝑺𝑴𝑨𝑳𝑻𝑬𝑹𝑰𝑨 𝑮&𝑴</p> 
+
+  <div class="ggg">
+    <nav class="ggg navbar navbar-expand-lg ">
+      <div class="col">
+        <div class="text-center">
+          <left class="ss">
+            <strong>Copyright 2023</strong> Criador: Gabriela Mattos
+          </left>
+        </div>
+      </div>
+    </nav>
+  </div>
 
 </body>
+
 </html>
